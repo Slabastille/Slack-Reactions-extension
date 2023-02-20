@@ -1,0 +1,15 @@
+{
+    "name": "Top Slack reactions",
+    "version": "0.1.0",
+    "description": "Get the top comments with reactions in a slack channel",
+    "permissions":["storage", "tabs"],
+    "host_permissions":["https://*app.slack.com/*"],
+    "background":{
+        "service_worker": ""
+    },
+    "content_scripts":[
+        {
+             "matches": ["https://*app.slack.com/*"]
+        }
+    ]
+}
